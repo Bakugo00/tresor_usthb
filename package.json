@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Abdou-kun.github.io/tresor_usthb",
   "name": "notus-react",
   "version": "1.1.0",
   "description": "Notus React - A free Tailwind CSS and React UI Kit and Admin by Creative Tim.",
@@ -21,12 +22,19 @@
     "tailwindcss": "2.0.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "ph-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start",
-    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css"
+    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
+    "preinstall": "npx npm-force-resolutions"
+  },
+
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,5 +53,8 @@
   },
   "optionalDependencies": {
     "typescript": "4.2.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
