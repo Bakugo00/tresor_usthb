@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Abdou-kun.github.io/tresor_usthb",
   "name": "notus-react",
   "version": "1.1.0",
   "description": "Notus React - A free Tailwind CSS and React UI Kit and Admin by Creative Tim.",
@@ -11,30 +10,23 @@
     "@tailwindcss/forms": "0.2.1",
     "autoprefixer": "10.2.5",
     "chart.js": "2.9.4",
-    "gulp": "^3.9.1",
+    "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
-    "postcss": "^8.4.5",
+    "postcss": "8.2.8",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
-    "react-scripts": "^5.0.0",
+    "react-scripts": "4.0.3",
     "tailwindcss": "2.0.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "ph-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start",
-    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
-    "preinstall": "npx npm-force-resolutions"
-  },
-
-  "resolutions": {
-    "graceful-fs": "^4.2.4"
+    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,8 +45,5 @@
   },
   "optionalDependencies": {
     "typescript": "4.2.3"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
   }
 }
