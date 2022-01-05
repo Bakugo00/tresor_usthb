@@ -35,7 +35,7 @@ export default function Index() {
 
         <img
           className="absolute top-0 b-auto right-0 pt-16 sm:w-6/11 -mt-48 sm:mt-0 w-8/10 max-h-600px"
-          src="img/.png"
+          src="img/tresor_logo.png"
           alt="..."
         />
       </section>
